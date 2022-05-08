@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+<body>
+    <h1>FORMLAR</h1>
+
+    <form action="result.html" method="get">
+
+    <div>
+        <label for="isim">AD:</label> <br>
+        <input type="text" id="isim" name="IsIm" value="" placeholder="Lütfen isim giriniz" required>
+        <br> <br>
+        <label for="soyisim">SOYAD:</label> <br>
+        <input type="soyisim" name="sOyIsIm" value="" placeholder="lütfen Soyisim giriniz">
+    </div>
+    <br>
+    <div>
+        <label for="sifre">SIFRE:</label>
+        <br>
+        <input type="password" id="sifre" name="password" value="" minlength="4" maxlength="8" placeholder="lütfen Sifre giriniz">
+    </div>
+    <br>
+    <div>
+        <label >CINSIYET</label>
+        <br>
+        <label for="erkek">ERKEK</label>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+
+        <label for="kadin">KADIN</label>
+        <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+
+        <label for="none">NONE</label>
+        <input type="radio" id="none" name="cinsiyet" value="none">
+
+    </div>
+    <br>
+    <div>
+        <label for="">FAVORI ARABANIZI SECINIZ</label>
+        <br>
+        <label for="bmw">BMW</label>
+        <input type="checkbox" id="bmw" name="araba1" value="bmw">
+        
+        <label for="audi">AUDI</label>
+        <input type="checkbox" id="audi" name="araba2" value="audi">
+        
+        <label for="merci">MERCEDES</label>
+        <input type="checkbox" id="merci" name="araba3" value="mercedes">
+
+    </div>
+    <br>
+    <div>
+        <label for="yas">YAS</label>
+        <input type="number" id="yas" name="yas" value="0">
+
+    </div>
+    <br>
+    <div>
+        <label for="renk">RENK</label>
+        <input type="color" id="renk" name="renk">
+
+    </div>
+    <br>
+
+    <div>
+        <label for="tarih">TARIH:</label>
+        <input type="date" id="tarih" name="tarih" min="2000-01-01" max="2023-01-01">
+
+    </div>
+    <br>
+    <div>
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" placeholder="Lütfen Mail giriniz">
+    </div>
+    <br>
+    <div>
+        <label for="">TELEFON:</label>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="555-309-63-44">
+    </div>
+    <br>
+    
+    <div>
+        <label for="tatli">Hangi Taliyi Seversiniz?</label>
+        <select name="tatli" id="tatli">
+
+
+        <optgroup label="Serbetlı Tatlılar">
+        <option value="">Künefe</option>
+        <option value="">Baklava</option>
+        <option value="">Kadayif</option>
+
+        </optgroup>
+    <optgroup label="Sütlü Talilar">
+        <option value="">Muhallebi</option>
+        <option value="">Kazandibi</option>
+
+
+    </optgroup>
+    </select>
+    </div>
+    <br>
+    
+    <div>
+        <input type="submit">
+        <input type="reset">
+        <input type="button" value="KAYDET">
+    </div>
+</form>
+</body>
+</html>
