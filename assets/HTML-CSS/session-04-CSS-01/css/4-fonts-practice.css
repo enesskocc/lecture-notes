@@ -1,0 +1,18 @@
+*{
+    font-family: 'Tapestry', cursive;
+}
+
+.menu{
+    background-color: lightgray;
+    width: 96px;
+    height: 96px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.aktif{
+    background-color: black;
+    color: white;
+    font-family: 'Water Brush', cursive;
+    font-style: italic;
+}

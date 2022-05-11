@@ -1,0 +1,55 @@
+.liste tr:nth-child(odd) {
+    background-color: pink;
+    color: yellow;
+}
+
+.liste td:first-child{
+    font-weight: 900;
+}
+
+.liste td:last-child{
+    font-style: italic;
+}
+
+.liste tr:nth-child(3){
+    background-color: red;
+    color: aquamarine;
+}
+
+.liste tr:nth-child(3)::after,
+.liste tr:nth-child(3)::before{
+    content: "🎀";
+    
+}
+
+.liste tr::before,
+.liste tr::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "💗";
+    font-size: 30px;
+}
+
+td:hover{
+    background-color: lightgreen;
+}
+
+tr:hover{
+    background-color: gray;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+a:visited{
+    color: green;
+}
+
+a:active{
+    color: cyan;
+}
+a:hover{
+    font-size: 50px;
+    background-color: red;
+}
