@@ -1,3 +1,7 @@
+/* table,td,th{
+    border-collapse:collapse;
+} */
+
 .liste tr:nth-child(odd) {
     background-color: pink;
     color: yellow;
@@ -34,8 +38,9 @@ td:hover{
     background-color: lightgreen;
 }
 
+/* hicbir renk stili vermez isen, asagidai ile bütün satiri kaplayan bir renk verebilirsin. */
 tr:hover{
-    background-color: gray;
+    background-color: black;
 }
 
 table{
