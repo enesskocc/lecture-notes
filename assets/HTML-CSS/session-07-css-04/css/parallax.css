@@ -1,0 +1,14 @@
+.bg{
+    height: 70vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.image1{
+background-image: url("./../../img/erik-karits-OZfVcu3Hy9E-unsplash.jpg");
+}
+
+.image2{
+    background-image: url("./../../img/erik-karits-OZfVcu3Hy9E-unsplash.jpg");
+}

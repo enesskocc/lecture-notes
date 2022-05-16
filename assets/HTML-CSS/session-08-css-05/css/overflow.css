@@ -1,0 +1,30 @@
+.box{
+    border: 2px solid red;
+    height: 5rem;
+    width: 20rem;
+    margin-bottom: 30rem ;
+}
+
+.first{
+    overflow: visible;
+}
+
+.second{
+    overflow: hidden;
+}
+/* .second:hover{
+    overflow: visible;
+} */
+
+.third{
+    overflow: auto;
+}
+
+.fourth{
+    overflow: scroll;
+}
+
+.fifth{
+    overflow-x: hidden ;
+    overflow-y: scroll ;
+}

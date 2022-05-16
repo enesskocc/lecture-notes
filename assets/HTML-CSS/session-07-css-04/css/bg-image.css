@@ -1,0 +1,33 @@
+*{
+    text-align: center;
+    color: white;
+}
+
+
+header.banner .bg{
+    height: 20rem;
+    background-image: url('https://picsum.photos/200');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+}
+
+.butonlar span{
+   background-color: gray;
+   width: 4rem;
+   height: 1.5rem;
+   display: inline-block;
+   margin: 1rem;
+}
+
+.butonlar span:hover{
+    background-color: lightgray;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
