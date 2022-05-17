@@ -1,0 +1,118 @@
+.contanier1{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    flex-wrap:wrap;
+    /* flex-wrap: nowrap; */
+
+    /*! NOOT */
+
+    background-color: antiquewhite;
+  /* display: flex; */
+  /*! Elemanların diziliş yönü : column=altalta block gibi, row =yanyana inline gibi, row-reverse= satırı sondan ve tersten yaz, column-reverse*/
+  /* flex-direction: row; */
+
+  /*? nowrap=sıkıştırma veya wrap=alt satıra geçebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+  flex-wrap: wrap;
+
+  /*! Yatay Hizalama: Justify-center
+  /**  /** flex-start: Nesneler kapsayıcının başından başlayarak dizilirler.*/
+  /**space-around: Nesneler arasında eşit boşluklar bırakılır.
+  /**space-between: İlk nesne başta, son nesne sonda olacak şekilde nesneler eşit olarak kapsayıcının içerisinde dizilirler.
+  /**center: Nesneler tam ortalı olacak şekilde hizalanır.
+  /**flex-end: Son nesne en sağa yaslanacak şekilde hizalanır. */
+  /* justify-content: space-around;  */
+
+}
+.contanier1 div{
+    background-color: tomato;
+    width: 5rem;
+    height: 5rem; 
+    margin: 1rem;
+}
+
+.contanier2{
+    background-color: pink;
+    height: 20rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline
+}
+
+.contanier2 div{
+    background-color: cornflowerblue;
+    width: 5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contanier2 div:nth-child(1){
+    height: 5rem;
+}
+
+.contanier2 div:nth-child(2){
+    height: 7rem;
+    padding-top: 2rem;
+}
+
+.contanier2 div:nth-child(3){
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+
+ul{
+    background-color: darkgray;
+    list-style-type: none;
+    height: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+/*!Çok satırlı verilerin dikeyde hizanmalması için kullanılır.bütün elemanlar yukarı çıkıyorlar*/
+    gap: 6rem 2rem;
+    /*?gap, flex içerisindeki elemanların dikey ve yatay boşluklarını belirlemek için kullanılabilir. ilk yazılan yatay (satırlar arası yukarı aşağı) boşluk, 2. yazılan ise dikey (sutunlar arası, sağ sol) boşluktur */
+
+
+}
+
+ul li{
+    background-color: violet;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4{
+    background-color: red;
+    display: flex;
+}
+
+.container4 div{
+    background-color: green;
+    width: 5rem;
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+/* .grow1, .grow2, .grow3, .grow4{
+    flex-grow: 1;
+} */
+
+div.grow2{
+    flex-grow: 2;
+}
+
+div.grow3{
+    flex-grow: 3;
+}
+
+div.grow4{
+    flex-grow: 0;
+}
+
+
