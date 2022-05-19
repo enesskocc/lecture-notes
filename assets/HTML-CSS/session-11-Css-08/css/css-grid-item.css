@@ -1,0 +1,66 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 15vh) 15vh 15vh;
+     /* dikeyde yüksekliği 4 eşit (ekranın %15 ini alacak şekilde)parçaya böldük. taşanlar olursa onlara da eşit yer verme adına parantez dışına satır adedi kadar ölçü vermeliyiz. vermezsek default div kadar olur. */
+    gap: 10px  5px;
+
+}
+
+.content{
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+}
+
+.content1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: pink;
+}
+
+.content4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: orange;
+}
+
+.content6{
+    /* grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5; */
+    grid-area: 2 / 3 / span 2 / span 2;
+    
+    background-color: purple;
+}
+
+.content9{
+    background-color: aqua;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 2;
+}
+
+.content10{
+    grid-area: 4 / 3 / span 2 / span 2;
+}
+
+.content12{
+    grid-area: 6 / 1 / span 1 / span 4;
+}
+
+
+
+
+
+
+/* .content:nth-child(odd){
+    background-color: pink;
+}
+
+.content:nth-child(even){
+    background-color: aquamarine;
+} */
