@@ -1,0 +1,64 @@
+@import "navbar", "variables";
+$arkarengi:rgba(28,150,190,0.5);
+$linkboyutu:19px;
+$borderrengi:2px solid rgb(175, 17, 29);
+$buttonrengi:rgb(202,17,162);
+
+
+
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+    background-color: burlywood;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: $arkarengi;
+    .brand{
+        img{
+            border: $borderrengi;
+            width: 80px;
+            border: 2px solid gray;
+            border-radius: 30%;
+            margin: 10px;
+        }
+    }
+}
+
+.navbar{
+    ul{ list-style-type:none;
+        display: flex;
+        li{ 
+            a{ 
+                text-decoration: none;
+                padding: 5px;
+                color: black;
+                font-size: $linkboyutu;
+            }
+            input{
+                width:70%;
+            }
+        }
+    }
+}
+
+.slider{ display: flex;
+    justify-content: space-evenly;
+    background-color: #cc6699; 
+
+    img{
+        width: 30%;
+    }
+    .left{
+        margin: 20px;
+    }
+    button{
+        border: none;
+        border-radius: 15px;
+        margin: 10px;
+        background-color: $arkarengi;
+    }
+}

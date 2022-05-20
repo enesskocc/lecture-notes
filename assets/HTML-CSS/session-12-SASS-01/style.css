@@ -1,0 +1,79 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(28, 150, 190, 0.5);
+}
+.nav .brand img {
+  border: 2px solid rgb(175, 17, 29);
+  width: 80px;
+  border: 2px solid gray;
+  border-radius: 30%;
+  margin: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+.navbar ul li a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  font-size: 19px;
+}
+.navbar ul li input {
+  width: 70%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  background-color: burlywood;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(28, 150, 190, 0.5);
+}
+.nav .brand img {
+  border: 2px solid rgb(175, 17, 29);
+  width: 80px;
+  border: 2px solid gray;
+  border-radius: 30%;
+  margin: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+.navbar ul li a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  font-size: 19px;
+}
+.navbar ul li input {
+  width: 70%;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #cc6699;
+}
+.slider img {
+  width: 30%;
+}
+.slider .left {
+  margin: 20px;
+}
+.slider button {
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: rgba(28, 150, 190, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */
