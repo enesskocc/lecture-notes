@@ -58,7 +58,7 @@ h1{
    }
    .col-1{
     background-color:var(--gri-5);
-    width: 35;
+    width: 35%;
    }
    .col-2{
     background-color:var(--gri-6);
@@ -79,7 +79,8 @@ h1{
 
     body{
     
-     background-color:var(--açık-kırmızı)
+     background-color:var(--açık-kırmızı);
+     color: white;
     }
     
 .col{

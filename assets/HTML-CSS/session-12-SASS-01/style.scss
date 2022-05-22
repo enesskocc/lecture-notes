@@ -1,64 +1,100 @@
-@import "navbar", "variables";
-$arkarengi:rgba(28,150,190,0.5);
-$linkboyutu:19px;
-$borderrengi:2px solid rgb(175, 17, 29);
-$buttonrengi:rgb(202,17,162);
+@import "navbar", "variables", "slider", "mixin", "extend";
 
 
+//! Degiskenleri tanimladik
 
+$arkaRengi:rgba(18, 171, 95, 0.512);
+$linkBoyutu:19px;
+$borderRengi:2px solid rgb(175,17,29);
+$buttonRengi:rgb(11, 98, 160);
 
 .container{
-    margin: 0 auto;
+    margin:0 auto;
     width: 80%;
     background-color: burlywood;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: $arkarengi;
-    .brand{
-        img{
-            border: $borderrengi;
-            width: 80px;
-            border: 2px solid gray;
-            border-radius: 30%;
-            margin: 10px;
-        }
-    }
-}
 
-.navbar{
-    ul{ list-style-type:none;
+
+.content{
+
+    .cards{
         display: flex;
-        li{ 
-            a{ 
-                text-decoration: none;
-                padding: 5px;
-                color: black;
-                font-size: $linkboyutu;
-            }
-            input{
-                width:70%;
-            }
+
+        .card1{
+          @include kutu(brown, white);  
         }
+
+        .card2{
+            @include kutu(#252631, white);
+        }
+
+        .card3{
+            @include kutu(cadetblue, yellow)
+        }
+
+        .card4{
+            @include kutu(#247482, #141414);
+        }
+
     }
 }
 
-.slider{ display: flex;
-    justify-content: space-evenly;
-    background-color: #cc6699; 
+$test:3;
+.footer{
+    
+    @if $test>3 {
+        background-color: brown;
+    }
 
-    img{
-        width: 30%;
+    @else if $test<3{
+        background-color: greenyellow;
     }
-    .left{
-        margin: 20px;
+
+    @else if $test==3{
+        background-color: pink;
     }
-    button{
-        border: none;
-        border-radius: 15px;
-        margin: 10px;
-        background-color: $arkarengi;
+
+}
+
+// .socialBoxes{
+//     // through yerine to olursa, 6 sayisini dahil etmez.
+//     @for $i from 1 through 6 {
+//         .social#{$i}{
+//             width: 10%;
+//             height: 20px;
+//             $renk:($i+5)*20;
+//             background-color: rgb($renk, $renk, $renk);
+//         }
+//     }
+// }
+
+$temerengi:(
+    "pink": rgb(214,131,131),
+    "red": rgb(255,5,5),
+    "orange": rgb(222,107,13)
+);
+
+@each $i, $renk in $temerengi {
+    .container{
+        &.#{$i}{
+            background-color: $renk
+        }
+    }    
+}
+
+$renkler: #004356,#990000,#005500,#456789,#121456,#145e13,#546773;
+
+@for $i from 1 to 7
+{
+    .social#{$i}{
+        background-color: nth($renkler , $i );
     }
 }
+
+// .social1{
+//     background-color: nth($renkler, 6);
+// }
+
+
+
