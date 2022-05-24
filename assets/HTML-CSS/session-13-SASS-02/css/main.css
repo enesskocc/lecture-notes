@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.4)), url(../img/WhatsApp\ Image\ 2022-05-23\ at\ 10.47.57.jpeg) center;
+  background-size: cover;
+}
+.home_name {
+  font-size: 5rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  text-align: center;
+}
+.home_name--last {
+  color: #ff652f;
+  font-weight: 600;
+}
+
+.nav {
+  text-align: right;
+}
+.nav .menu-nav__item {
+  display: inline;
+  padding: 0.8rem;
+}
+.nav .menu-nav__item.active > a {
+  color: #ff652f;
+}
+.nav .menu-nav_link {
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.4)), url(../img/WhatsApp\ Image\ 2022-05-23\ at\ 10.47.57.jpeg) center center;
+  background-size: cover;
+}
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+.about__bio .text-secondary {
+  color: #ff652f;
+}
+.about .jobs {
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs__job {
+  background-color: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+}
+.about h2, .about h3, .about h6 {
+  margin: 0.5rem 0;
+}
+.about .social {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.projects__bio-image {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.4)), url(../img/WhatsApp\ Image\ 2022-05-23\ at\ 10.47.57.jpeg) center center;
+  background-size: cover;
+}
+.projects__bio-image .text-secondary {
+  color: #ff652f;
+}
+.projects__items {
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.projects__item {
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.projects__item img {
+  width: 100%;
+}
+.projects__item::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #ff652f;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.projects__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+.projects__item:hover .projects_btns {
+  opacity: 1;
+}
+.projects__btns {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+.projects__btns :hover {
+  color: black;
+}
+
+body {
+  background-color: #272727;
+  color: #fff;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100;
+}
+main .social {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+main a {
+  padding: 0.2rem;
+}
+main a:hover {
+  color: #ff652f;
+}
+main footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

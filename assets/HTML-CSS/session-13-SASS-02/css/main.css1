@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.4)), url(../img/WhatsApp\ Image\ 2022-05-23\ at\ 10.47.57.jpeg) center;
+  background-size: cover;
+}
+.home_name {
+  font-size: 5rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  text-align: center;
+}
+.home_name--last {
+  color: #ff652f;
+  font-weight: 600;
+}
+
+.nav .menu-nav__item {
+  display: inline;
+}
+
+body {
+  background-color: #272727;
+  color: #fff;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100;
+}
+main .social {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+main a {
+  padding: 0.2rem;
+}
+main a:hover {
+  color: #ff652f;
+}
+main footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css1.map */

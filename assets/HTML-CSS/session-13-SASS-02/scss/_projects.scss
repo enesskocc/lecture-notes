@@ -1,0 +1,74 @@
+.projects{
+    &__bio-image{
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        background: linear-gradient(to right,rgba($primary-color,0.9), rgba($primary-color,0.4)),
+        url(../img/WhatsApp\ Image\ 2022-05-23\ at\ 10.47.57.jpeg) center center;
+        background-size: cover;
+
+        .text-secondary{
+            color: $secondary-color;
+        }
+    }
+
+    &__items{
+        width:60%;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    &__item{
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        img{
+            width: 100%;
+            
+        }
+
+        &::after{
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: $secondary-color;
+            top: 100%;
+            left: 0;
+            opacity: 0;
+            @include transition;
+        }
+
+        &:hover{
+            &::after{
+                top: 0;
+                opacity: 0.9;
+            }
+            .projects_btns{
+                opacity: 1;
+            }
+        }
+    }
+    &__btns{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        position: absolute;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: center;
+
+        :hover{
+            color: black;
+        }
+    }
+}
