@@ -36,3 +36,37 @@ let büyükbul= function (x,y,z) {
 }
 
 console.log(büyükbul(3,5,9));
+
+//* Örnek3: bir fonksiyon icerisinde baska bir fonksiyon cagirma
+//**********************************************************/
+
+const topla= function(s1,s2){
+    return s1+s2
+   }
+    const cikar = function (s1, s2) {
+      return s1 - s2;
+    };
+    const carp = function (s1, s2) {
+      return s1 * s2;
+    };
+    const böl = function (s1, s2) {
+      return s1 / s2;
+    };
+   
+   const hesapla=function (islem ,s1 ,s2) {
+   let sonuc;
+   if(islem=="+")
+   {sonuc=topla(s1,s2);}
+   else if (islem=="-")
+   {sonuc=cikar(s1,s2);}
+   else if (islem=="*")
+   {sonuc=carp(s1,s2);}
+   else if(islem=="/")
+   {sonuc=böl(s1,s2);}
+   return sonuc;
+   }
+   
+   alert(hesapla("*",3,5));
+   
+   console.log(hesapla("/",8,4));
+      
