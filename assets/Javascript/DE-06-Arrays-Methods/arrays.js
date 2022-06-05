@@ -1,52 +1,52 @@
-// // ?=========================================================
-// // ?                DİZİLER (ARRAYS)
-// // ?=========================================================
+// ?=========================================================
+// ?                DİZİLER (ARRAYS)
+// ?=========================================================
 
-// //* Dizi Tanımlama
-// //* ---------------------------------------------------------
+//* Dizi Tanımlama
+//* ---------------------------------------------------------
 
-// //! 1.Yöntem (Array Literal) - Tercih edilen yöntem
-// const yaslar = [30, 54, 22, 18, 5];
+//! 1.Yöntem (Array Literal) - Tercih edilen yöntem
+const yaslar = [30, 54, 22, 18, 5];
+console.log(yaslar);
+console.log(yaslar.length);
+
+//! 2.Yöntem (Array Constructor)
+const cars = new Array("BMW", "Mercedes", "Volvo");
+console.log(cars);
+
+const numbers = new Array(3, 2, 0);
+console.log(numbers);
+
+//10 elemanlı boş bir array tanımlama
+
+const sayilar1=new Array(10)
+console.log(sayilar1);
+
+sayilar1[4]=123;
+console.log(sayilar1);
+
+
+//!hata, const keyword ü ile tanımlanmış bir diziye tamamiyle bir atama yapılamaz, içinde tek tek değişikliğe izin veriyor.
+// yaslar=[1,2,3,4,5];
 // console.log(yaslar);
-// console.log(yaslar.length);
 
-// //! 2.Yöntem (Array Constructor)
-// const cars = new Array("BMW", "Mercedes", "Volvo");
-// console.log(cars);
+const dogum=1980;
 
-// const numbers = new Array(3, 2, 0);
-// console.log(numbers);
+const isimler=[
 
-// //10 elemanlı boş bir array tanımlama
+"Ferhat", "Nurbaki","Enes", 2022-dogum, "Salih",true, 4.5, yaslar
+]
 
-// const sayilar1=new Array(10)
-// console.log(sayilar1);
+console.log(isimler);
 
-// sayilar1[4]=123;
-// console.log(sayilar1);
+//*dizinin elemanlarına yazma (indisleme)
 
+isimler[6]=false;
+console.log(isimler);
 
-// // !hata, const keyword ü ile tanımlanmış bir diziye tamamiyle bir atama yapılamaz, içinde tek tek değişikliğe izin veriyor.
-// // yaslar=[1,2,3,4,5];
-// // console.log(yaslar);
-
-// const dogum=1980;
-
-// const isimler=[
-
-// "Ferhat", "Nurbaki","Enes", 2022-dogum, "Salih",true, 4.5, yaslar
-// ]
-
-// console.log(isimler);
-
-// //*dizinin elemanlarına yazma (indisleme)
-
-// isimler[6]=false;
-// console.log(isimler);
-
-// //*nested erişim
-// console.log( isimler[7][1]);
-// console.log( isimler[isimler.length-1][1]);
+//*nested erişim
+console.log( isimler[7][1]);
+console.log( isimler[isimler.length-1][1]);
 
 
 // ?=========================================================
@@ -55,36 +55,36 @@
 //*pop() dizinin son elemanını siler ve yazdırırsak sildiği elemanı döndürür
 const meyveler = ["Elma","Erik","Armut","Muz","Kivi"]
 
-// const silinen=   meyveler.pop();
+const silinen=   meyveler.pop();
 
-// console.log(meyveler , "sildiğim eleman" , silinen);
+console.log(meyveler , "sildiğim eleman" , silinen);
 
-// //*shift() dizinin ilk elemanını siler ve yazdırırsak onu döndürür
-// const sil2= meyveler.shift();
+//*shift() dizinin ilk elemanını siler ve yazdırırsak onu döndürür
+const sil2= meyveler.shift();
 
-// console.log(meyveler, sil2);
+console.log(meyveler, sil2);
 
-// //*push() dizinin sonuna eleman ekler , ve yazdırırsak dizinin güncel eleman sayısına döndürür
+//*push() dizinin sonuna eleman ekler , ve yazdırırsak dizinin güncel eleman sayısına döndürür
 
-//  const sayi= meyveler.push("Çilek","Kavun", "karpuz");
+ const sayi= meyveler.push("Çilek","Kavun", "karpuz");
 
-// console.log(meyveler ,sayi);
+console.log(meyveler ,sayi);
 
-// //*unshift() dizinin başına eleman ekler ve dizi sayısını döndürür
+//*unshift() dizinin başına eleman ekler ve dizi sayısını döndürür
 
-// meyveler.unshift("Ayva");
-// console.log(meyveler);
+meyveler.unshift("Ayva");
+console.log(meyveler);
 
-// //*reverse() dizinin tamamını ters çevirir
+//*reverse() dizinin tamamını ters çevirir
 
-// meyveler.reverse();
+meyveler.reverse();
 
-// console.log(meyveler);
+console.log(meyveler);
 
-// const yeni = meyveler[4].split("").reverse();
+const yeni = meyveler[4].split("").reverse();
 
-// console.log(meyveler);
-// console.log(yeni);
+console.log(meyveler);
+console.log(yeni);
 
 //*sort() , string ifadelerde alfabetik sıralar(ascıı değerlerine göre)
 //* sort metodu diziyi iterasyona uğratır ve parametre olarak aldığı arrow fonksiyonunu (a-b>0 önce b yi yaz gibi) dizinin her bir elemanına uygular. Bu sayade küçük sayılar ile büyük sayıları yer değişirerek sıralama işlemini gerçleştirir.
@@ -213,3 +213,8 @@ const birlesik = yazilar.concat(
   [["x", "y", "z"]]
 );
 console.log(birlesik);
+
+
+
+
+
