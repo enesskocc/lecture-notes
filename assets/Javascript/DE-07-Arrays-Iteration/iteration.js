@@ -143,8 +143,8 @@ let bigName=  names.map((isim)=> isim.toUpperCase())
 console.log(bigName, names);
 
 //*2yol  tek tek yazdıralım
-names.map((x)=>x.toLowerCase()).forEach((X)=>console.log(X))
-
+let a= names.map((x)=>x.toLowerCase())
+console.log(a);
 //*örnek
 //* prices dizisindeki ürün fiyatlarinin 250 TL altında olanlarına
 //* %10 zam, üstünde olanlarına da %20 zam yapılmak isteniyor. Ayrıca
@@ -158,3 +158,82 @@ prices.map((p, i, price) => {
   return prices;
 });
 console.log(prices);
+
+//* ======================================================
+//*                       FILTER METHOD
+//* ======================================================
+//* prices array'inde fiyatı 250 TL den az olanlari ayri
+//* bir diziye saklayalim.
+
+// const prices =  [132, 312, 72, 118.8]
+
+ let ayriDizi= prices.filter((p)=>p<250)
+ console.log(ayriDizi, prices);
+
+ //* ======================================================
+//*                       PIPELINE
+//* ======================================================
+
+ //!slide daki soru, pipeline olmazsa böyle uzun uzun if le çözeriz
+//* Fiyatı 100 TL den fazla olanlara %10 zam, 100 TL den az olanlara ise %15 zam yapılmak isteniyor. Ayrıca, zamlı olan yeni değerleri örnekteki gibi diziye saklamak istiyoruz.
+ const tlFiyatlar = [100, 150, 100, 50, 80];
+
+  const degerler = tlFiyatlar.map( (d)=> {
+    if (d > 100) {
+    d=d*1.1
+    } else {
+      d=d*1.15
+   }
+    return d;
+  });
+ console.log(degerler);
+
+
+ let ab= tlFiyatlar.filter((x)=>x>100).map((x)=>x*1.1)
+
+ let b= tlFiyatlar.filter((x)=>x<=100).map((x)=>x*1.15)
+console.log(ab,b);
+
+//*-------------- ÖRNEK -------------------
+//*people dizisinde ismin ilk harfine göre arama yaparak ilgili isimleri listeleyen bir fonksiyon yazınız.
+const people = [
+  "Baser",
+  "Berivan",
+  "Mehmet",
+  "Mustafa",
+  "Mali",
+  "Halil",
+  "Fatih",
+  "Hasret",
+  "Fatma",
+];
+
+const bulHarf=(parametre)=>{
+const yeni=parametre.toUpperCase()
+people.filter((a)=>a.startsWith(yeni)).forEach((x)=>console.log(x))
+}
+
+bulHarf("b")
+bulHarf("M")
+
+//* ======================================================
+//*                       REDUCE METHOD
+//* ======================================================
+
+//* salaries toplamini bulunuz.
+ const salaries = [3000, 5000, 4000, 6000, 6500];
+
+ let toplam2=salaries.reduce((toplam,dizieleman)=>toplam+dizieleman,0)
+ 
+
+console.log(toplam2);
+//maas ortalaması
+console.log(toplam2/salaries.length);
+
+//!for eache ach metodu arraylerde geçerlidir, tek eleman döndüren durumlarda geçersizdir 
+
+//* salaries dizisindeki elemanların çarpımını bulunuz.
+let carpim2=  salaries.reduce((carpim, dizieleman) => carpim * dizieleman, 1);
+
+console.log(carpim2);
+
